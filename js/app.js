@@ -82,14 +82,6 @@
     };
 
 });
-// mneu ham
-ham.addEventListener('click', function() {
-    ham.classList.toggle('crece');
-    menu_wrapper.classList.toggle('crece');
-});
-//flecha subir
-
-
 var frases = [' conectan', 'enganchan '];
 TinyType('tinytype', frases, {
 
@@ -97,6 +89,12 @@ TinyType('tinytype', frases, {
 
     deleteSpeed: 90
 });
+// mneu ham
+ham.addEventListener('click', function() {
+    ham.classList.toggle('crece');
+    menu_wrapper.classList.toggle('crece');
+});
+//flecha subir
 
 document.getElementById("botonArriba").addEventListener("click", irArriba);
 
@@ -116,7 +114,7 @@ window.onscroll = function() {
         botonArriba.style.transform = "scale(1)";
 
     } else if (scroll < 200) {
-        botonArriba.style.transform = "scale(0)";;
+        botonArriba.style.transform = "scale(0)";
     }
 
 };

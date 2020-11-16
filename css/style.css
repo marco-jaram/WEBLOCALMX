@@ -626,7 +626,7 @@ li {
         background-position-y: 70px;
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: scroll;
     }
     .titulos {
         padding-bottom: 350px;
