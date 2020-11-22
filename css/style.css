@@ -382,7 +382,14 @@ li {
 .titulo-portafolio {
     color: var(--color-primario);
     padding-bottom: 15px;
-    font-family: var(--tipo-primario);
+    font-family: var(--tipo-secundario);
+}
+
+.portafolio__titulos {
+    text-align: center;
+    color: var(--color-oscuro1);
+    font-size: 3rem;
+    font-family: var(--tipo-secundario);
 }
 
 #portafolio-vermas {
@@ -392,6 +399,12 @@ li {
     padding: 10px;
     border-radius: 5px;
     color: white;
+}
+
+.portafolio-ver-sitio {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-primario);
 }
 
 
@@ -662,7 +675,7 @@ li {
     /***portafolio**/
     .portafolio-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         column-gap: 2rem;
     }
     /****Propuesta******/
@@ -745,7 +758,7 @@ li {
     }
     .portafolio-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
 }
