@@ -1,3 +1,10 @@
+// mneu ham
+ham.addEventListener('click', function() {
+    ham.classList.toggle('crece');
+    menu_wrapper.classList.toggle('crece');
+});
+//typinfg
+
 (function(root, factory) {
     'use strict';
 
@@ -89,11 +96,7 @@ TinyType('tinytype', frases, {
 
     deleteSpeed: 90
 });
-// mneu ham
-ham.addEventListener('click', function() {
-    ham.classList.toggle('crece');
-    menu_wrapper.classList.toggle('crece');
-});
+
 //flecha subir
 
 document.getElementById("botonArriba").addEventListener("click", irArriba);
