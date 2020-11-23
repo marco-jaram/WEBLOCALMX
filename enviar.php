@@ -1,19 +1,34 @@
 <?php
+require("/home2/weblocalmx//public_html/PHPMailer-master/src/PHPMailer.php");
+require("/home2/weblocalmx//public_html/PHPMailer-master/src/SMTP.php");
+ $mail = new PHPMailer\PHPMailer\PHPMailer();
+ $mail->IsSMTP(); // enable SMTP
+ $mail->SMTPDebug = 0; // debugging: 1 = errors and messages, 2 = messages only
+ $mail->SMTPAuth = true; // authentication enabled
+ $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+ $mail->Host = "mail.weblocalmx.com";
+ $mail->Port = 465; // or 587
+ $mail->IsHTML(true);
+ $mail->Username = "contacto@weblocalmx.com";
+ $mail->Password = "aleph2020";
+ 
 
-    $destinatario = "contacto@weblocalmx.com";
-    $asunto = "Mensaje enviado desde formulario de contacto";
-    
-    $mensaje= "Este mensaje fue enviado por: " .$_POST['nombre'] . " \r\n";
-    $mensaje .= "Su correo es: " . $_POST['correo'] . " \r\n";
-    $mensaje .= "Comentario: " . $_POST['comentario'] . " \r\n";
+ $mail->SetFrom($_POST['correo'],$_POST['nombre']);//linea agregada
+ 
+ $mail->Subject = "Mensaje desde formulario web ";
 
-    $header = 'From: ' . $correo . " \r\n";
-    $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-    $header .= "Mime-Version: 1.0 \r\n";
-    $header .= "Content-Type: text/plain";
+$mail->Body = "MENSAJE ENVIADO POR:  " .$_POST['nombre']. 
+"____SU CORREO ES: " . $_POST['correo'] .
+"____COMENTARIO: " . $_POST['comentario'] ;
 
-   
-@mail($destinatario,$asunto, utf8_decode($mensaje), $header );
-header("Location: exito.html");
+ 
+ $mail->AddAddress("contacto@weblocalmx.com");
+ if(!$mail->Send()) {
+ echo "Mailer Error: " . $mail->ErrorInfo;
+ } else {
+     header("Location: exito.html");
 exit;
+ 
+ }
+ 
 ?>
