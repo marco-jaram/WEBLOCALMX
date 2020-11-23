@@ -1,16 +1,17 @@
 <?php
-require("/home2/weblocalmx//public_html/PHPMailer-master/src/PHPMailer.php");
-require("/home2/weblocalmx//public_html/PHPMailer-master/src/SMTP.php");
+require("/home2/weblocalmx/public_html/PHPMailer-master/src/PHPMailer.php");
+require("/home2/weblocalmx/public_html/PHPMailer-master/src/SMTP.php");
+
  $mail = new PHPMailer\PHPMailer\PHPMailer();
  $mail->IsSMTP(); // enable SMTP
  $mail->SMTPDebug = 0; // debugging: 1 = errors and messages, 2 = messages only
  $mail->SMTPAuth = true; // authentication enabled
  $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
- $mail->Host = "mail.weblocalmx.com";
+ $mail->Host = "weblocalmx.com";
  $mail->Port = 465; // or 587
  $mail->IsHTML(true);
- $mail->Username = "contacto@weblocalmx.com";
- $mail->Password = "aleph2020";
+ $mail->Username = "hola@weblocalmx.com";
+ $mail->Password = "micorreo2020";
  
 
  $mail->SetFrom($_POST['correo'],$_POST['nombre']);//linea agregada
@@ -22,13 +23,13 @@ $mail->Body = "MENSAJE ENVIADO POR:  " .$_POST['nombre'].
 "____COMENTARIO: " . $_POST['comentario'] ;
 
  
- $mail->AddAddress("contacto@weblocalmx.com");
+ $mail->AddAddress("hola@weblocalmx.com");
  if(!$mail->Send()) {
  echo "Mailer Error: " . $mail->ErrorInfo;
  } else {
      header("Location: exito.html");
 exit;
- 
+ //echo "Mensaje enviado correctamente";
  }
- 
+ //header("Location: exito.html");
 ?>
