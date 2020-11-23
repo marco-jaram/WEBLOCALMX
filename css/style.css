@@ -58,7 +58,7 @@ img {
 }
 
 .header-inicio {
-    background-image: url(/img/header1.png);
+    background-image: url(/img/header-cel-min.png);
     background-position-x: -440px;
     background-position-y: 60px;
     background-size: cover;
@@ -635,6 +635,7 @@ li {
         display: none;
     }
     .header-inicio {
+        background-image: url(/img/header1.png);
         background-position-x: 0px;
         background-position-y: 70px;
         background-size: cover;
