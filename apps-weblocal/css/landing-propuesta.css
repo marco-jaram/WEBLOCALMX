@@ -37,7 +37,7 @@ img {
 }
 
 .imagen-header-movil {
-    background-image: url(/img-landing-propuesta/miniatura-heade.png);
+    background-image: url(/apps-weblocal/img-landing-propuesta/miniatura-heade.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,7 +148,7 @@ iframe {
     }
     .imagen-header-desktop {
         display: block;
-        background-image: url(/img-landing-propuesta/header-landing-propuesta.png);
+        background-image: url(/apps-weblocal/img-landing-propuesta/header-landing-propuesta.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
