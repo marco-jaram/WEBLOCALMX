@@ -40,7 +40,7 @@ input{
 ?>
  
  <!--inicia html  -->
-<h1>Aqui toyyyyyyyyyyyyyyyy </h1>
+
 
 
 <!DOCTYPE html>
