@@ -13,7 +13,7 @@ function initSnow() {
         snow[i].style.fontFamily = ['serif', 'sans-serif', 'monospace'][rand(0, 2)];
         snow[i].style.fontSize = rand(8, 32) + 'px';
         snow[i].style.lineHeight = '1';
-        snow[i].textContent = '*';
+        snow[i].textContent = '♥';
         document.body.appendChild(snow[i]);
         snow[i].w = snow[i].offsetWidth;
         snow[i].h = snow[i].offsetHeight;
