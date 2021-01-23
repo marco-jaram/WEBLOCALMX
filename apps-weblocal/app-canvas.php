@@ -1,3 +1,48 @@
+<?php
+$password = "123";
+if ($_POST['password'] != $password) {
+?>
+<style>
+.contenedor {
+   max-width: 1000px;
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+  margin-top: 80px;
+}
+h1
+{
+   text-align: center;
+   color: #11b28e;
+}
+h2{
+   color: grey;
+}
+input{
+   margin: 5px;
+   
+}
+
+</style>
+<div class="contenedor">
+<h1>MODELO DE NEGOCIOS CANVAS</h1>
+<h2>Introduce la clave de acceso</h2>
+<form name="form" method="post" action="">
+   <input type="password" name="password"><br>
+   <input id="boton-enviar" type="submit" value="Entrar">
+
+</form>
+
+
+</div>
+<?php
+}else{
+?>
+ 
+ <!--inicia html  -->
+<h1>Aqui toyyyyyyyyyyyyyyyy </h1>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,6 +50,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=»robots» content=»noindex»>
+
     <title>App Canvas modelo de negocio</title>
     <link rel="icon" type="image/png" href="img-landing-canvas/favicon-weblocal.png">
     <link rel="stylesheet" href="/apps-weblocal/css/app-canvas.css">
@@ -19,13 +65,13 @@
 
         <h1>MODELO DE NEGOCIOS CANVAS</h1>
         <div class="img-app-canvas-hader"></div>
-        <p>Para mayor comodida utiliza una tableta, laptop o desktop</p>
+        <p>Para mayor comodidad utiliza una tableta, laptop o desktop.</p>
         <p>Si aun no tienes la propuesta de valor te engo una buena noticia. Tengo una aplicación similar a ésta y
-            ¡también es gratis!. Solo mandame un correo y te mando la clave de acceso</p>
+            ¡también es gratis!. Solo manda un correo y te envío la clave de acceso.</p>
         <br>
         <p> <strong>Instrucciones</strong> : contesta el cuestionario con la mayor cantidad de respuestas. Carga las
             respuestas dándole al botón "cargar respuestas" y luego al botón "generara pdf" y descárgalo.</p>
-        <p>Espero te sea de mucha utilidad &#128513;</p>
+        <p>Espero te sea de mucha utilidad. &#128513;</p>
     </div>
 
     <br><br>
@@ -38,8 +84,9 @@
     <div class="contenedor">
         <form id="formulario">
             <h4>0. Nombre de proyecto</h4>
-            <span>  &#9187; </span> <input type="text" name="name-nombre-proyecto" id="respuesta-nombre-proyecto"><br><br>
-           <br>
+            <span> &#9187; </span> <input type="text" name="name-nombre-proyecto"
+                id="respuesta-nombre-proyecto"><br><br>
+            <br>
             <h4>1. Segmentacion de clientes</h4>
             <p>¿A quién va dirigido? <br>
 
@@ -148,7 +195,8 @@
                 <table class="tg">
                     <thead>
                         <tr>
-                            <th class="tg-0lax" rowspan="2">8. Colaboradores <br>
+                            <th class="tg-0lax" rowspan="2">8. Colaboradores <br> <img
+                                    src="/apps-weblocal/img-landing-canvas/icono-canvas-colaboradores.png" alt="">
                                 <ol class="colaboradores">
                                     <li class="colaboradores-1" id="colaboradores1"></li>
                                     <li class="colaboradores-2" id="colaboradores2"></li>
@@ -157,7 +205,8 @@
                                     <li class="colaboradores-5" id="colaboradores5"></li>
                                 </ol>
                             </th>
-                            <th class="tg-0lax">7. Actividades <br>
+                            <th class="tg-0lax">7. Actividades <br> <img
+                                    src="/apps-weblocal/img-landing-canvas/icono-canvas-actividades.png" alt="">
                                 <ol class="actividades">
                                     <li class="actividades-1" id="actividades1"></li>
                                     <li class="actividades-2" id="actividades2"></li>
@@ -166,14 +215,17 @@
                                     <li class="actividades-5" id="actividades5"></li>
                                 </ol>
                             </th>
-                            <th class="tg-0lax" rowspan="3">2. Propuesta de valor <br> <img src="/apps-weblocal/img-landing-canvas/icono-canvas-valor.png" alt="">
+                            <th class="tg-0lax" rowspan="3">2. Propuesta de valor <br> <img
+                                    src="/apps-weblocal/img-landing-canvas/icono-canvas-valor.png" alt="">
                                 <ol class="propuesta-de-valor">
                                     <li class="propuesta-de-valor-1" id="propuesta-de-valor1"></li>
 
 
                                 </ol>
                             </th>
-                            <th class="tg-0lax">4. Relacion con clientes <br> <img src="/apps-weblocal/img-landing-canvas/icono-cavas-relacion-cliente-amigo-consulting.png" alt="">
+                            <th class="tg-0lax">4. Relacion con clientes <br> <img
+                                    src="/apps-weblocal/img-landing-canvas/icono-cavas-relacion-cliente-amigo-consulting.png"
+                                    alt="">
                                 <ol class="relacion-clientes">
                                     <li class="relacion-clientes-1" id="relacion-clientes1"></li>
                                     <li class="relacion-clientes-2" id="relacion-clientes2"></li>
@@ -182,7 +234,8 @@
                                     <li class="relacion-clientes-5" id="relacion-clientes5"></li>
                                 </ol>
                             </th>
-                            <th class="tg-0lax" rowspan="2">1. Segmentacion de clientes <br> <img src="/apps-weblocal/img-landing-canvas/icono-canvas-segmento-target.png" alt="">
+                            <th class="tg-0lax" rowspan="2">1. Segmentacion de clientes <br> <img
+                                    src="/apps-weblocal/img-landing-canvas/icono-canvas-segmento-target.png" alt="">
                                 <ol class="segmentacion">
                                     <li class="segmentacion-1" id="segmentacion1"></li>
                                     <li class="segmentacion-2" id="segmentacion2"></li>
@@ -191,7 +244,8 @@
                             </th>
                         </tr>
                         <tr>
-                            <td class="tg-0lax">6. Recursos clave<br>
+                            <td class="tg-0lax">6. Recursos clave<br> <img
+                                    src="/apps-weblocal/img-landing-canvas/icono-canvas-recursos-clave.png" alt="">
                                 <ol class="recursos">
                                     <li class="recursos-1" id="recursos1"></li>
                                     <li class="recursos-2" id="recursos2"></li>
@@ -200,7 +254,8 @@
                                     <li class="recursos-5" id="recursos5"></li>
                                 </ol>
                             </td>
-                            <td class="tg-0lax">3. Canales <br> <img src="/apps-weblocal/img-landing-canvas/icono-canvas-canales.png" alt="">
+                            <td class="tg-0lax">3. Canales <br> <img
+                                    src="/apps-weblocal/img-landing-canvas/icono-canvas-canales.png" alt="">
                                 <ol class="canales">
                                     <li class="canales-1" id="canales1"></li>
                                     <li class="canales-2" id="canales2"></li>
@@ -211,7 +266,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="tg-0lax" colspan="2">9. Estructura de costes <br>
+                            <td class="tg-0lax" colspan="2">9. Estructura de costes <br><img
+                                    src="/apps-weblocal/img-landing-canvas/icono-canvas-costes.png" alt="">
                                 <ol class="costes">
                                     <li class="costes-1" id="costes1"></li>
                                     <li class="costes-2" id="costes2"></li>
@@ -220,7 +276,8 @@
                                     <li class="costes-5" id="costes5"></li>
                                 </ol>
                             </td>
-                            <td class="tg-0lax" colspan="2">5. Fuente de ingresos <br> <img src="/apps-weblocal/img-landing-canvas/icono-canvas-ingresos.png" alt="">
+                            <td class="tg-0lax" colspan="2">5. Fuente de ingresos <br> <img
+                                    src="/apps-weblocal/img-landing-canvas/icono-canvas-ingresos.png" alt="">
                                 <ol class="fuente-ingresos">
                                     <li class="fuente-ingresos-1" id="fuente-ingresos1"></li>
                                     <li class="fuente-ingresos-2" id="fuente-ingresos2"></li>
@@ -238,8 +295,8 @@
         </div>
     </div>
     <div class="contenedor">
-    <button onclick="generaPDF()"> GENERA PDF Y DESCARGA</button>
-</div>
+        <button onclick="generaPDF()"> GENERA PDF Y DESCARGA</button>
+    </div>
 
 
     <footer>
@@ -258,3 +315,8 @@
 </body>
 
 </html>
+
+ <!-- termina html -->
+<?php
+   }
+   ?>

@@ -1,3 +1,49 @@
+
+<?php
+$password = "123";
+if ($_POST['password'] != $password) {
+?>
+<style>
+.contenedor {
+   max-width: 1000px;
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+  margin-top: 80px;
+}
+h1
+{
+   text-align: center;
+   color: #11b28e;
+}
+h2{
+   color: grey;
+}
+input{
+   margin: 5px;
+   
+}
+
+</style>
+<div class="contenedor">
+<h1>MODELO DE NEGOCIOS CANVAS</h1>
+<h2>Introduce la clave de acceso</h2>
+<form name="form" method="post" action="">
+   <input type="password" name="password"><br>
+   <input id="boton-enviar" type="submit" value="Entrar">
+
+</form>
+
+
+</div>
+<?php
+}else{
+?>
+ 
+ <!--inicia html  -->
+<h1>Aqui toyyyyyyyyyyyyyyyy </h1>
+
+ 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,8 +107,9 @@
             </p>
             <p> <strong>Ejemplo 1</strong> . Servicio de fotografías de boda: <br> El servicio de fotografías de boda va
                 dirigido a:
-                <br> • personas que están planeando una boda personas que esten comprometidas personas que se van a
-                casar
+                <br> • Personas que están planeando una boda
+                <br> • Personas que esten comprometidas
+                <br> • Personas que se van a casar
                 <br><br> <strong>Ejemplo 2</strong> : Curso sobre nutrición: Dietas de éxito.
                 <br> • El curso de nutrición está dirigida a:
                 <br> • Quien esté buscando bajar de peso
@@ -178,7 +225,7 @@
 
 
     </section>
-<!-- resouestas -->
+    <!-- resouestas -->
     <section class="contenedor">
         <h3>Aqui podras ver los resultados una vez que constestes el cuestionario y le des al boton de cargar</h3>
 
@@ -235,9 +282,12 @@
             </div>
         </div>
     </section>
+    <div class="contenedor">
+        <button onclick="generaPDF()"> GENERA PDF Y DESCARGA</button>
+    </div>
     <footer>
         <div class="contenido-footer">
-            <span>Creado por Marco Jaramillo
+            <span>Creado por Marco Jaramillo - 2021
             </span>
         </div>
     </footer>
@@ -247,3 +297,9 @@
 </body>
 
 </html>
+
+
+<!-- termina html -->
+<?php
+   }
+   ?>
