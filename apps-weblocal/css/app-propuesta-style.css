@@ -110,8 +110,11 @@ input {
 
 .resultados {
     margin-top: 50px;
+    
 }
-
+.contenido-imprimir{
+    padding: 30px;
+}
 @media (min-width: 768px) {
     .img-min {
         display: none;

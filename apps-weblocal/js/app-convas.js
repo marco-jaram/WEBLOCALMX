@@ -1,6 +1,7 @@
 function recogeDatos(evento) {
     evento.preventDefault();
     //obteniendo datos desde formulario
+    let nombreProyecto = document.querySelector("#respuesta-nombre-proyecto").value;
     let propuestaValor = document.querySelector("#respuesta-propuesta1").value;
 
     let segmentacion1 = document.querySelector("#respuesta-segmentacion1").value;
@@ -62,6 +63,7 @@ function recogeDatos(evento) {
 
 
     // //obteneidno lugar en canvas dato de formulario
+    let canvasNombreproyecto = document.querySelector('#nombre-del-proyecto');
     let canvaPropuesta = document.querySelector("#propuesta-de-valor1");
 
     let canvasSegmentacion1 = document.querySelector("#segmentacion1");
@@ -118,6 +120,8 @@ function recogeDatos(evento) {
 
 
     //inyectando el dato en el lugar de canvas
+    canvasNombreproyecto.innerHTML =nombreProyecto;
+    
     canvaPropuesta.innerHTML = propuestaValor;
 
     canvasSegmentacion1.innerHTML = segmentacion1;

@@ -21,7 +21,14 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-
+.barra {
+    background-color: rgb(22, 26, 20);
+    height: 50px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
 .tg {
     border-collapse: collapse;
     border-spacing: 0;
@@ -76,6 +83,9 @@ span,
 .tg-0lax {
     color: rgba(57, 58, 57, 0.781);
 }
+p{
+    line-height: 2rem;
+}
 
 .tg .tg-0lax {
     text-align: left;
@@ -83,7 +93,7 @@ span,
 }
 
 li {
-    color: green;
+    color:#11b28e;
 }
 
 input {
@@ -102,7 +112,13 @@ input {
 .contenido-footer span {
     color: white;
 }
-
+.contenido-imprimir{
+    padding: 30px;
+}
+.contenedor-canvas-resultados{
+    max-width: 1250px;
+    margin: 0 auto;
+}
 @media (min-width: 768px) {
     .tg {
         width: auto !important;
