@@ -1,5 +1,5 @@
 <?php
-$password = "123";
+$password = "APsMfnRfbbfwo*G#qG2R";
 if ($_POST['password'] != $password) {
 ?>
 <style>

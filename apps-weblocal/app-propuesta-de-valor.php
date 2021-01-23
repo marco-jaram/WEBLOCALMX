@@ -1,6 +1,6 @@
 
 <?php
-$password = "123";
+$password = "NrJs5uX8fw255ZnEX5";
 if ($_POST['password'] != $password) {
 ?>
 <style>
