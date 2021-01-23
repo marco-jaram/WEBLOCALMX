@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=»robots» content=»noindex»>
-    <title>Modelo de negocio canvas</title>
-    <link rel="stylesheet" href="/apps-weblocal/css/canvas-style.css">
+    <title>App Canvas modelo de negocio</title>
+    <link rel="icon" type="image/png" href="img-landing-canvas/favicon-weblocal.png">
+    <link rel="stylesheet" href="/apps-weblocal/css/app-canvas.css">
 
 </head>
 
@@ -15,11 +15,121 @@
     <div class="contenedor">
 
         <h1>MODELO DE NEGOCIOS CANVAS</h1>
+        <div class="img-app-canvas-hader"></div>
         <p>Para mayor comodida utiliza una tableta, laptop o desktop</p>
-        <p> <strong>Instrucciones</strong> : contesta el cuestionario con la mayor cantidad de respuestas. Carga las respuestas dándole al botón "cargar respuestas" y luego al botón "generara pdf" y descárgalo.</p>
+        <p>Si aun no tienes la propuesta  tengo una aplicación similar a ésta y ¡también es gratis! de valor mandame un correo</p>
+        <p> <strong>Instrucciones</strong> : contesta el cuestionario con la mayor cantidad de respuestas. Carga las
+            respuestas dándole al botón "cargar respuestas" y luego al botón "generara pdf" y descárgalo.</p>
         <p>Espero te sea de mucha utilidad &#128513;</p>
     </div>
-    <div class="contenedor tg-wrap">
+
+
+
+
+
+
+
+    <!-- formulario de respuestas -->
+    <div class="contenedor">
+        <form id="formulario">
+            <h4>1. Segmentacion de clientes</h4>
+            <p>¿A quién va dirigido? <br>
+
+                <span>1 </span><input type="text" name="name-propuesta1" id="respuesta-segmentacion1"><br>
+                <span>2 </span><input type="text" name="name-propuesta2" id="respuesta-segmentacion2">
+            </p>
+
+
+
+
+            <h4>2. Propuesta de valor</h4>
+            <p>¿De qué va mi negocio, cuál es beneficio es el principal? <br>
+
+
+                <span>1 </span><input type="text" name="name-respuesta-propuesta1" id="respuesta-propuesta1"><br>
+            </p>
+
+
+
+            <h4>3. Canales</h4>
+            <p>Medio que utilizas para que el cliente conozca tu servicio y lo compre. <br>
+
+                <span>1 </span><input type="text" name="name-canales1" id="respuesta-canes1"><br>
+                <span>2 </span><input type="text" name="name-canales2" id="respuesta-canes2"><br>
+                <span>3 </span><input type="text" name="name-canales3" id="respuesta-canes3"><br>
+                <span>4 </span><input type="text" name="name-canales4" id="respuesta-canes4"><br>
+                <span>5 </span><input type="text" name="name-canales5" id="respuesta-canes5">
+            </p>
+            <h4>4. Relacion con clientes</h4>
+            <p>A parte de cumplir con lo que ofreces, vas a... <br>
+
+                <span>1 </span><input type="text" name="name-relacion1" id="respuesta-relacion-clientes1"><br>
+                <span>2 </span><input type="text" name="name-relacion2" id="respuesta-relacion-clientes2"><br>
+                <span>3 </span><input type="text" name="name-relacion3" id="respuesta-relacion-clientes3"><br>
+                <span>4 </span><input type="text" name="name-relacion4" id="respuesta-relacion-clientes4"><br>
+                <span>5 </span><input type="text" name="name-relacion5" id="respuesta-relacion-clientes5">
+            </p>
+            <h4>5. Fuente de ingresos</h4>
+            <p>Es lógico que venderás, ¿pero más allá de eso qué nos brindará ingresos? <br>
+
+                <span>1 </span><input type="text" name="nameingreso1" id="respuesta-ingresos1"><br>
+                <span>2 </span><input type="text" name="nameingreso2" id="respuesta-ingresos2"><br>
+                <span>3 </span><input type="text" name="nameingreso3" id="respuesta-ingresos3"><br>
+                <span>4 </span><input type="text" name="nameingreso4" id="respuesta-ingresos4"><br>
+                <span>5 </span><input type="text" name="nameingreso5" id="respuesta-ingresos5">
+            </p>
+            <h4>6. Recursos clave</h4>
+            <p>Anota los Recursos Claves para tener un negocio de éxito.Herramientas fisicas y digitales. Web,
+                programas, etc. <br>
+
+                <span>1 </span><input type="text" name="name-recurso1" id="respuesta-recursos1"><br>
+                <span>2 </span><input type="text" name="name-recurso2" id="respuesta-recursos2"><br>
+                <span>3 </span><input type="text" name="name-recurso3" id="respuesta-recursos3"><br>
+                <span>4 </span><input type="text" name="name-recurso4" id="respuesta-recursos4"><br>
+                <span>5 </span><input type="text" name="name-recurso5" id="respuesta-recursos5">
+            </p>
+
+            <h4>7. Actividades</h4>
+            <p>¿Qué tienes que hacer para cumplir con mis objetivos y propuesta de valor? <br>
+
+                <span>1 </span><input type="text" name="name-ctividades1" id="respuesta-actividades1"><br>
+                <span>2 </span><input type="text" name="name-ctividades2" id="respuesta-actividades2"><br>
+                <span>3 </span><input type="text" name="name-ctividades3" id="respuesta-actividades3"><br>
+                <span>4 </span><input type="text" name="name-ctividades4" id="respuesta-actividades4"><br>
+                <span>5 </span><input type="text" name="name-ctividades5" id="respuesta-actividades5">
+            </p>
+            <h4>8. Colaboradores</h4>
+            <p>¿Cuáles son las alianzas necesarias para poder ejecutar el negocio? Diseñador, copywritting, etc. <br>
+
+
+                <span>1 </span><input type="text" name="name'colaboradores1" id="respuesta-colaboradores1"><br>
+                <span>2 </span><input type="text" name="name'colaboradores2" id="respuesta-colaboradores2"><br>
+                <span>3 </span><input type="text" name="name'colaboradores3" id="respuesta-colaboradores3"><br>
+                <span>4 </span><input type="text" name="name'colaboradores4" id="respuesta-colaboradores4"><br>
+                <span>5 </span><input type="text" name="name'colaboradores5" id="respuesta-colaboradores5">
+            </p>
+            <h4>9. Estructura de costes</h4>
+            <p>¿Cuánto cuesta lo esencial para tener éxito? <br>
+
+                <span>1 </span><input type="text" name="name costes1" id="respuesta-costes1"><br>
+                <span>2 </span><input type="text" name="name costes2" id="respuesta-costes2"><br>
+                <span>3 </span><input type="text" name="name costes3" id="respuesta-costes3"><br>
+                <span>4 </span><input type="text" name="name costes4" id="respuesta-costes4"><br>
+                <span>5 </span><input type="text" name="name costes5" id="respuesta-costes5">
+            </p>
+
+            <button type="submit">CARGAR RESPUESTAS EN CANVAS</button>
+            <div class="mensaje-carga"></div>
+            <button onclick="generaPDF()"> GENERA PDF Y DESCARGA</button>
+        </form>
+    </div>
+
+    <!--  RESPUESTAS LIENZO CON RECUADROS -->
+    <div class="contenedor">
+<h2>Resultados</h2>
+
+
+    <div class="tg-wrap">
         <table class="tg">
             <thead>
                 <tr>
@@ -110,98 +220,14 @@
     </div>
 
 
+</div>
 
 
 
 
-    <!-- formulario de respuestas -->
-    <div class="contenedor">
-        <form id="formulario">
-            <h4>1. Propuesta de valor</h4>
-            <p>¿De qué va mi negocio, cuál es beneficio es el principal? <br>
 
 
-                <span>1 </span><input type="text" name="name-respuesta-propuesta1" id="respuesta-propuesta1"><br>
-            </p>
 
-            <h4>2. Segmentacion de clientes</h4>
-            <p>¿A quién va dirigido? <br>
-
-                <span>1 </span><input type="text" name="name-propuesta1" id="respuesta-segmentacion1"><br>
-                <span>2 </span><input type="text" name="name-propuesta2" id="respuesta-segmentacion2">
-            </p>
-
-            <h4>3. Canales</h4>
-            <p>Medio que utilizas para que el cliente conozca tu servicio y lo compre. <br>
-
-                <span>1 </span><input type="text" name="name-canales1" id="respuesta-canes1"><br>
-                <span>2 </span><input type="text" name="name-canales2" id="respuesta-canes2"><br>
-                <span>3 </span><input type="text" name="name-canales3" id="respuesta-canes3"><br>
-                <span>4 </span><input type="text" name="name-canales4" id="respuesta-canes4"><br>
-                <span>5 </span><input type="text" name="name-canales5" id="respuesta-canes5">
-            </p>
-            <h4>4. Relacion con clientes</h4>
-            <p>A parte de cumplir con lo que ofreces, vas a... <br>
-
-                <span>1 </span><input type="text" name="name-relacion1" id="respuesta-relacion-clientes1"><br>
-                <span>2 </span><input type="text" name="name-relacion2" id="respuesta-relacion-clientes2"><br>
-                <span>3 </span><input type="text" name="name-relacion3" id="respuesta-relacion-clientes3"><br>
-                <span>4 </span><input type="text" name="name-relacion4" id="respuesta-relacion-clientes4"><br>
-                <span>5 </span><input type="text" name="name-relacion5" id="respuesta-relacion-clientes5">
-            </p>
-            <h4>5. Fuente de ingresos</h4>
-            <p>Es lógico que venderás, ¿pero más allá de eso qué nos brindará ingresos? <br>
-
-                <span>1 </span><input type="text" name="nameingreso1" id="respuesta-ingresos1"><br>
-                <span>2 </span><input type="text" name="nameingreso2" id="respuesta-ingresos2"><br>
-                <span>3 </span><input type="text" name="nameingreso3" id="respuesta-ingresos3"><br>
-                <span>4 </span><input type="text" name="nameingreso4" id="respuesta-ingresos4"><br>
-                <span>5 </span><input type="text" name="nameingreso5" id="respuesta-ingresos5">
-            </p>
-            <h4>6. Recursos clave</h4>
-            <p>Anota los Recursos Claves para tener un negocio de éxito.Herramientas fisicas y digitales. Web, programas, etc. <br>
-
-                <span>1 </span><input type="text" name="name-recurso1" id="respuesta-recursos1"><br>
-                <span>2 </span><input type="text" name="name-recurso2" id="respuesta-recursos2"><br>
-                <span>3 </span><input type="text" name="name-recurso3" id="respuesta-recursos3"><br>
-                <span>4 </span><input type="text" name="name-recurso4" id="respuesta-recursos4"><br>
-                <span>5 </span><input type="text" name="name-recurso5" id="respuesta-recursos5">
-            </p>
-
-            <h4>7. Actividades</h4>
-            <p>¿Qué tienes que hacer para cumplir con mis objetivos y propuesta de valor? <br>
-
-                <span>1 </span><input type="text" name="name-ctividades1" id="respuesta-actividades1"><br>
-                <span>2 </span><input type="text" name="name-ctividades2" id="respuesta-actividades2"><br>
-                <span>3 </span><input type="text" name="name-ctividades3" id="respuesta-actividades3"><br>
-                <span>4 </span><input type="text" name="name-ctividades4" id="respuesta-actividades4"><br>
-                <span>5 </span><input type="text" name="name-ctividades5" id="respuesta-actividades5">
-            </p>
-            <h4>8. Colaboradores</h4>
-            <p>¿Cuáles son las alianzas necesarias para poder ejecutar el negocio? Diseñador, copywritting, etc. <br>
-
-
-                <span>1 </span><input type="text" name="name'colaboradores1" id="respuesta-colaboradores1"><br>
-                <span>2 </span><input type="text" name="name'colaboradores2" id="respuesta-colaboradores2"><br>
-                <span>3 </span><input type="text" name="name'colaboradores3" id="respuesta-colaboradores3"><br>
-                <span>4 </span><input type="text" name="name'colaboradores4" id="respuesta-colaboradores4"><br>
-                <span>5 </span><input type="text" name="name'colaboradores5" id="respuesta-colaboradores5">
-            </p>
-            <h4>9. Estructura de costes</h4>
-            <p>¿Cuánto cuesta lo esencial para tener éxito? <br>
-
-                <span>1 </span><input type="text" name="name costes1" id="respuesta-costes1"><br>
-                <span>2 </span><input type="text" name="name costes2" id="respuesta-costes2"><br>
-                <span>3 </span><input type="text" name="name costes3" id="respuesta-costes3"><br>
-                <span>4 </span><input type="text" name="name costes4" id="respuesta-costes4"><br>
-                <span>5 </span><input type="text" name="name costes5" id="respuesta-costes5">
-            </p>
-
-            <button type="submit">CARGAR RESPUESTAS EN CANVAS</button>
-            <div class="mensaje-carga"></div>
-            <button onclick="generaPDF()"> GENERA PDF Y DESCARGA</button>
-        </form>
-    </div>
     <script src="/apps-weblocal/js/app-convas.js"></script>
     <script src="/apps-weblocal/js/imprimePDF.js"></script>
 </body>

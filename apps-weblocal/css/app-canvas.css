@@ -72,7 +72,7 @@ input {
     margin: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media (min-width: 768px) {
     .tg {
         width: auto !important;
     }
@@ -82,6 +82,13 @@ input {
     .tg-wrap {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        margin: auto 0px;
+        margin-top: 80px;
+    }
+    .img-app-canvas-hader{
+        background-image: url(/apps-weblocal/img-landing-canvas/canvas-explicado-grafico.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 60vh;
     }
 }
