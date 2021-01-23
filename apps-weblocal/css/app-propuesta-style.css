@@ -17,7 +17,7 @@ img {
 }
 
 .img-min {
-    background-image: url(/img-landing-propuesta/propuesta-postil-min.png);
+    background-image: url(/apps-weblocal/img-landing-propuesta/propuesta-postil-min.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -117,7 +117,7 @@ input {
         display: none;
     }
     .img-grande {
-        background-image: url(/img-landing-propuesta/propuesta-de-valor-postils-optimizada.jpg);
+        background-image: url(/apps-weblocal/img-landing-propuesta/propuesta-de-valor-postils-optimizada.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;

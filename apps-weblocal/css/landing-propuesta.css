@@ -2,7 +2,9 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 * {
     margin: 0px;
 }
@@ -50,9 +52,7 @@ img {
     margin: 0 auto;
 }
 
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+
 
 p {
     color: rgba(57, 58, 57, 0.781);

@@ -1,3 +1,18 @@
+* {
+    margin: 0px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -39,7 +54,10 @@ h3 {
     text-align: center;
     color: #11b28e;
 }
+h4{
+    color: #11b28e;
 
+}
 button {
     display: block;
     margin-top: 30px;
@@ -53,7 +71,7 @@ button {
 
 strong,
 p,
-h4,
+
 span,
 .tg-0lax {
     color: rgba(57, 58, 57, 0.781);
@@ -70,6 +88,19 @@ li {
 
 input {
     margin: 10px;
+}
+
+.contenido-footer {
+    height: 90px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 150px;
+    background-color: black;
+}
+
+.contenido-footer span {
+    color: white;
 }
 
 @media (min-width: 768px) {
