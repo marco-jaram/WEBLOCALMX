@@ -67,7 +67,7 @@ input{
         <p>Como podrás ver en el gráfco anterior, la propuesta de valor pertenece al lienzo "canvas" del Plan de
             Negocios. Y te tengo buenas noticias: tambien tengo una aplicacion para ello y ¿qué crees? <strong>¡También
                 es gratuita!</strong> </p>
-        <p>Así que cuendo termines, solicitame por correo el acceso a la aplicaión Plan de Negocios Canvas.</p>
+        <p>Así que cuando termines, entra en <a href="https://weblocalmx.com/apps-weblocal/app-canvas.php">Plan de Negocios Canvas</a>  con esta clave: APsMfnRfbbfwo*G#qG2R</p>
         <p>Por comodidad utiliza una pantalla de laptop o desktop</p>
         <p> <strong>Instrucciones:</strong> </p>
         <ol>
