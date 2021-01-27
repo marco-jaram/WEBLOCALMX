@@ -62,12 +62,12 @@ input{
         <div class="logo contenedor"> <i>Weblocalmx</i></div>
     </div>
     <div class="contenedor">
-
-        <h1>MODELO DE NEGOCIOS CANVAS</h1>
+    <h1>MODELO DE NEGOCIOS CANVAS</h1>
+        <h1>APP PROPUESTA DE VALOR</h1>
         <div class="img-app-canvas-hader"></div>
         <p>Para mayor comodidad utiliza una tableta, laptop o desktop.</p>
         <p>Si aun no tienes la propuesta de valor te tengo una buena noticia. Tengo una aplicación similar a ésta y
-            ¡también es gratis!. Entra a <a href="https://weblocalmx.com/apps-weblocal/app-propuesta-de-valor.php">Propuesta de valor</a> con la clave: NrJs5uX8fw255ZnEX5.</p>
+            ¡también es gratis!. Entra a <a href="https://weblocalmx.com/apps-weblocal/app-propuesta-de-valor.php">Propuesta de valor</a> con la clave: NrJs5uX8fw255ZnEX5</p>
         <br>
         <p> <strong>Instrucciones</strong> : contesta el cuestionario con la mayor cantidad de respuestas. Carga las
             respuestas dándole al botón "cargar respuestas" y luego al botón "generara pdf" y descárgalo.</p>

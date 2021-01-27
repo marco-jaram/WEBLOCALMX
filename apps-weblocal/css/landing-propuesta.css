@@ -65,7 +65,16 @@ ol li {
     color: rgb(71, 71, 71);
     line-height: 2.5rem;
 }
-
+.lista-sirve-para{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.lista-sirve-para ol li{
+    line-height: 3rem;
+    color:#11b28e;
+    font-weight: bold;
+}
 h1 {
     color: #11b28e;
 }

@@ -26,7 +26,7 @@ input{
 
 </style>
 <div class="contenedor">
-<h1>MODELO DE NEGOCIOS CANVAS</h1>
+<h1>APP PROPUESTA DE VALOR</h1>
 <h2>Introduce la clave de acceso</h2>
 <form name="form" method="post" action="">
    <input type="password" name="password"><br>
@@ -64,10 +64,10 @@ input{
         <h1>Aplicación web para obtener la Propuesta de valor de produto o servicio</h1>
         <div class="img-min"></div>
         <div class="img-grande"></div>
-        <p>Como podrás ver en el gráfco anterior, la propuesta de valor pertenece al lienzo "canvas" del Plan de
-            Negocios. Y te tengo buenas noticias: tambien tengo una aplicacion para ello y ¿qué crees? <strong>¡También
+        <p>Como podrás ver en el gráfico anterior, la propuesta de valor pertenece al lienzo "canvas" del Plan de
+            Negocios. Y te tengo buenas noticias: hice una aplicación para ello y ¿qué crees? <strong>¡También
                 es gratuita!</strong> </p>
-        <p>Así que cuando termines, entra en <a href="https://weblocalmx.com/apps-weblocal/app-canvas.php">Plan de Negocios Canvas</a>  con esta clave: APsMfnRfbbfwo*G#qG2R</p>
+        <p>Así que cuando termines, entra a <a href="https://weblocalmx.com/apps-weblocal/app-canvas.php">Plan de Negocios Canvas</a>  con esta clave: APsMfnRfbbfwo*G#qG2R</p>
         <p>Por comodidad utiliza una pantalla de laptop o desktop</p>
         <p> <strong>Instrucciones:</strong> </p>
         <ol>
