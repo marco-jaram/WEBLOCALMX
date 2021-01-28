@@ -141,9 +141,7 @@ h1 {
     justify-content: center;
 }
 
-iframe {
-    width: 500px;
-}
+
 
 @media (min-width: 768px) {
     h1 {
