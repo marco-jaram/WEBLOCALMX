@@ -23,6 +23,7 @@ img {
     display: none;
 }
 
+
 .barra {
     background-color: rgb(22, 26, 20);
     height: 50px;
@@ -31,7 +32,11 @@ img {
     display: flex;
     align-items: center;
 }
-
+.barra div a {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
 .mensaje-principal {
     background-color: rgb(239, 245, 238);
     margin-top: -200px;

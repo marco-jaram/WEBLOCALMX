@@ -1,4 +1,4 @@
-var snow = new Array(30),  //cantidad
+var snow = new Array(5),  //cantidad
     bodyWidth = document.body.scrollWidth,
     bodyHeight = document.body.scrollHeight;
 

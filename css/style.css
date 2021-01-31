@@ -436,6 +436,9 @@ li {
 .card:hover{
     transform: translateY(-3%);
 }
+.cards a{
+    text-decoration: none;
+}
 .container{
     position: relative;
     clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
