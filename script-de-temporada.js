@@ -1,4 +1,4 @@
-var snow = new Array(5),  //cantidad
+var snow = new Array(3),  //cantidad
     bodyWidth = document.body.scrollWidth,
     bodyHeight = document.body.scrollHeight;
 
@@ -31,7 +31,7 @@ function moveSnow() {
             snow[i].style.top = top + 4 + 'px';
         }
     }
-    setTimeout(moveSnow, 50); //velocidad
+    setTimeout(moveSnow, 300); //velocidad
 }
 
 initSnow();
