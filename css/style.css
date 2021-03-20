@@ -597,12 +597,18 @@ img{
 .contacto-grid {
     background-color: var(--color-claro2);
     padding: 20px;
+    text-align: center;
 }
 
 .contacto-grid h2 {
     color: var(--color-primario);
 }
+/* contacto-pagina */
+.contactoht h2{
+color: var(--color-primario);
+padding-top: 50px;
 
+}
 .footer {
     background-color: var(--color-oscuro2);
 }
@@ -825,12 +831,12 @@ img{
     .contenedor-auditoria {
         background-color: var(--color-claro2);
     }
-    .contacto-grid {
+    /* .contacto-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         -moz-column-gap: 2rem;
         column-gap: 2rem;
-    }
+    } */
     .contenido-footer {
         display: flex;
         align-items: center;
