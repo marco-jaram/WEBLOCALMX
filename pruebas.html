@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+  <!-- formulario jotform -->
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+  <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+  <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.24107" type="text/javascript"></script>
+  <script src="https://js.jotform.com/vendor/postMessage.js?3.3.24107" type="text/javascript"></script>
+  <script src="https://js.jotform.com/WidgetsServer.js?v=1616261999996" type="text/javascript"></script>
+  <script type="text/javascript">
+      JotForm.init(function () {
+          if (window.JotForm && JotForm.accessible) $('input_3').setAttribute('tabindex', 0);
+          if (window.JotForm && JotForm.accessible) $('input_10').setAttribute('tabindex', 0);
+          JotForm.setCustomHint('input_10', 'Type here...');
+          JotForm.newDefaultTheme = true;
+          JotForm.extendsNewTheme = false;
+          JotForm.newPaymentUIForNewCreatedForms = false;
+          JotForm.newPaymentUI = true;
+          JotForm.alterTexts({ "ageVerificationError": "Debe ser mayor de {minAge} años para enviar este formulario.", "alphabetic": "Este campo solo puede contener letras.", "alphanumeric": "Este campo solo puede contener letras y números.", "ccDonationMinLimitError": "La Cantidad Mínima es {minAmount} {currency}", "ccInvalidCVC": "El número CVC no es válido.", "ccInvalidExpireDate": "La fecha de expiración no es válida", "ccInvalidNumber": "El número de su tarjeta de crédito no es válido.", "ccMissingDonation": "Favor ponga valores númericos en la cantidad a donar.", "ccMissingProduct": "Por favor seleccione al menos un producto.", "characterLimitError": "Demasiados caracteres. El límite es", "characterMinLimitError": "Muy pocos caracteres. El mínimum es", "confirmClearForm": "¿Está seguro que desea limpiar el formulario?", "confirmEmail": "El correo electrónico no coincide", "currency": "Este campo sólo puede contener valores de moneda.", "cyrillic": "Este campo solo puede contener caracteres cirílicos.", "dateInvalid": "Esta fecha no es valida. El formato de fecha es {format}", "dateInvalidSeparate": "Esta fecha no es válida. Ponga una {element} válida", "dateLimited": "Esta fecha no está disponible.", "disallowDecimals": "Por favor, introduzca un número entero.", "email": "Introduzca una dirección e-mail válida", "fillMask": "El valor de este campo debe llenar la mascara", "freeEmailError": "No se permiten cuentas de correo gratuitas ", "generalError": "Existen errores en el formulario, por favor corríjalos antes de continuar.", "generalPageError": "Hay errores en esta página. Por favor, corríjalos antes de continuar.", "gradingScoreError": "El puntaje total debería ser sólo \"menos que\" o \"igual que\"", "incompleteFields": "Existen campos requeridos incompletos. Por favor complételos.", "inputCarretErrorA": "La entrada no debe ser inferior al valor mínimo:", "inputCarretErrorB": "La entrada debe ser menor al valor:", "lessThan": "Tu puntuación debería ser menor o igual que", "maxDigitsError": "El máximo de dígitos permitido es", "multipleFileUploads_emptyError": "El fichero {file} está vacío; por favor, selecciona de nuevo los ficheros sin él.", "multipleFileUploads_fileLimitError": "Solo {fileLimit} carga de archivos permitida.", "multipleFileUploads_minSizeError": "{file} is demasiado pequeño, el tamaño mínimo de fichero es: {minSizeLimit}.", "multipleFileUploads_onLeave": "Se están cargando los ficheros, si cierras ahora, se cancelará dicha carga.", "multipleFileUploads_sizeError": "{file} es demasiado grande; el tamaño del archivo no debe superar los {sizeLimit}.", "multipleFileUploads_typeError": "El fichero {file} posee una extensión no permitida. Sólo están permitidas las extensiones {extensions}.", "numeric": "Este campo sólo admite valores numéricos.", "pastDatesDisallowed": "La fecha debe ser futura", "pleaseWait": "Por favor, espere ...", "required": "Campo requerido.", "requireEveryCell": "Se requieren todas las celdas.", "requireEveryRow": "Todas las filas son obligatorias.", "requireOne": "Al menos un campo requerido.", "uploadExtensions": "Solo puede subir los siguientes archivos:", "uploadFilesize": "Tamaño del archivo no puede ser mayor que:", "uploadFilesizemin": "Tamañao de archivo no puede ser menos de:", "url": "Este campo solo contiene una URL válida.", "wordLimitError": "Demasiadas palabras. El límite es", "wordMinLimitError": "Muy pocas palabras. El mínimo es" });
+          JotForm.clearFieldOnHide = "disable";
+          JotForm.submitError = "jumpToFirstError";
+          /*INIT-END*/
+      });
+
+      JotForm.prepareCalculationsOnTheFly([null, null, null, { "description": "", "name": "nombre3", "qid": "3", "subLabel": "", "text": "Nombre:", "type": "control_textbox" }, { "description": "", "name": "correo", "qid": "4", "subLabel": "", "text": "Correo:", "type": "control_email" }, null, null, { "name": "escribaUna", "qid": "7", "text": "Terms and Conditions", "type": "control_widget" }, { "name": "id", "qid": "8", "text": "Id", "type": "control_autoincrement" }, { "name": "enviar", "qid": "9", "text": "Enviar", "type": "control_button" }, { "description": "", "name": "mensaje", "qid": "10", "subLabel": "", "text": "Mensaje", "type": "control_textarea" }]);
+      setTimeout(function () {
+          JotForm.paymentExtrasOnTheFly([null, null, null, { "description": "", "name": "nombre3", "qid": "3", "subLabel": "", "text": "Nombre:", "type": "control_textbox" }, { "description": "", "name": "correo", "qid": "4", "subLabel": "", "text": "Correo:", "type": "control_email" }, null, null, { "name": "escribaUna", "qid": "7", "text": "Terms and Conditions", "type": "control_widget" }, { "name": "id", "qid": "8", "text": "Id", "type": "control_autoincrement" }, { "name": "enviar", "qid": "9", "text": "Enviar", "type": "control_button" }, { "description": "", "name": "mensaje", "qid": "10", "subLabel": "", "text": "Mensaje", "type": "control_textarea" }]);
+      }, 20);
+  </script>
+  <link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.24107" />
+  <link id="custom-font" type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/opt/google-fonts/Roboto/fontface.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f7ed99c2c2c7240ba580251" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.24107" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.24107" />
+  
+  <style type="text/css" id="form-designer-style">
+      /* Injected CSS Code */
+      /*PREFERENCES STYLE*/
+      body {
+          background-color: white!important;
+      }
+
+
+      .form-label.form-label-auto {
+
+          display: block;
+          float: none;
+          text-align: left;
+          width: 100%;
+
+      }
+
+      .form-line {
+          margin-top: 0px;
+          margin-bottom: 0px;
+      }
+
+      .form-all {
+          max-width: 500px;
+          width: 100%;
+      }
+
+      .form-label.form-label-left,
+      .form-label.form-label-right,
+      .form-label.form-label-left.form-label-auto,
+      .form-label.form-label-right.form-label-auto {
+          width: 281px;
+      }
+
+      .form-all {
+          font-size: 16px
+      }
+
+      .form-all .qq-upload-button,
+      .form-all .qq-upload-button,
+      .form-all .form-submit-button,
+      .form-all .form-submit-reset,
+      .form-all .form-submit-print {
+          font-size: 16px
+      }
+
+      .form-all .form-pagebreak-back-container,
+      .form-all .form-pagebreak-next-container {
+          font-size: 16px
+      }
+
+      .supernova .form-all,
+      .form-all {
+          background-color: #fff;
+      }
+
+      .form-all {
+          color: #2C3345;
+      }
+
+      .form-header-group .form-header {
+          color: #2C3345;
+      }
+
+      .form-header-group .form-subHeader {
+          color: #2C3345;
+      }
+
+      .form-label-top,
+      .form-label-left,
+      .form-label-right,
+      .form-html,
+      .form-checkbox-item label,
+      .form-radio-item label {
+          color: #2C3345;
+      }
+
+      .form-sub-label {
+          color: #464d5f;
+      }
+
+      .supernova {
+          background-color: #ecedf3;
+      }
+
+      .supernova {
+          background: transparent;
+      }
+
+      .form-textbox,
+      .form-textarea,
+      .form-dropdown,
+      .form-radio-other-input,
+      .form-checkbox-other-input,
+      .form-captcha input,
+      .form-spinner input {
+          background-color: #fff;
+      }
+
+      .supernova {
+          background-image: none;
+      }
+
+      #stage {
+          background-image: none;
+      }
+
+      .form-all {
+          background-image: none;
+      }
+
+      .ie-8 .form-all:before {
+          display: none;
+      }
+
+      .ie-8 {
+          margin-top: auto;
+          margin-top: initial;
+      }
+
+      /*PREFERENCES STYLE*/
+      /*__INSPECT_SEPERATOR__*/
+      /* Injected CSS Code */
+  </style>
+
+  <form class="jotform-form" action="https://submit.jotform.com/submit/210778580535866/" method="post" name="form_210778580535866" id="210778580535866" accept-charset="utf-8" autocomplete="on">
+      <input type="hidden" name="formID" value="210778580535866" />
+      <input type="hidden" id="JWTContainer" value="" />
+      <input type="hidden" id="cardinalOrderNumber" value="" />
+      <div role="main" class="form-all">
+          <ul class="form-section page-section">
+              <li class="form-line jf-required" data-type="control_textbox" id="id_3">
+                  <label class="form-label form-label-top form-label-auto" id="label_3" for="input_3">
+                      Nombre:
+                      <span class="form-required">
+                          *
+                      </span>
+                  </label>
+                  <div id="cid_3" class="form-input-wide jf-required" data-layout="half">
+                      <input type="text" id="input_3" name="q3_nombre3" data-type="input-textbox" class="form-textbox validate[required]" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_3" required="" />
+                  </div>
+              </li>
+              <li class="form-line jf-required" data-type="control_email" id="id_4">
+                  <label class="form-label form-label-top form-label-auto" id="label_4" for="input_4">
+                      Correo:
+                      <span class="form-required">
+                          *
+                      </span>
+                  </label>
+                  <div id="cid_4" class="form-input-wide jf-required" data-layout="half">
+                      <input type="email" id="input_4" name="q4_correo" class="form-textbox validate[required, Email]" style="width:310px" size="310" value="" data-component="email" aria-labelledby="label_4" required="" />
+                  </div>
+              </li>
+              <li class="form-line" data-type="control_textarea" id="id_10">
+                  <label class="form-label form-label-top form-label-auto" id="label_10" for="input_10"> Mensaje </label>
+                  <div id="cid_10" class="form-input-wide" data-layout="full">
+                      <textarea id="input_10" class="form-textarea" name="q10_mensaje" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_10"></textarea>
+                  </div>
+              </li>
+              <li class="form-line jf-required" data-type="control_widget" id="id_7">
+                  <div id="cid_7" class="form-input-wide termsAndConditionsV2 jf-required" data-layout="full">
+                      <div data-widget-name="Términos y Condiciones" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field">
+                          <iframe data-client-id="52948fb29322cd302b00000c" title="Términos y Condiciones" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_7" src="" style="max-width:580px;border:none;width:100%;height:50px" data-width="580" data-height="50">
+                          </iframe>
+                          <div class="widget-inputs-wrapper">
+                              <input type="hidden" id="input_7" class="form-hidden form-widget widget-required " name="q7_escribaUna" value="" />
+                              <input type="hidden" id="widget_settings_7" class="form-hidden form-widget-settings" value="%5B%7B%22name%22%3A%22termsText%22%2C%22value%22%3A%22Estoy%20de%20acuerdo%20con%20las%20%7Bpol%C3%ADticas%20de%20privacidad%7D.%22%7D%2C%7B%22name%22%3A%22termsLink%22%2C%22value%22%3A%22https%3A%2F%2Fhomeworldinternational.com%2Ftratamiento-de-datos-personales-homeworld-international-education-s-a-s%2F%22%7D%2C%7B%22name%22%3A%22theme%22%2C%22value%22%3A%22default%22%7D%2C%7B%22name%22%3A%22acceptedText%22%2C%22value%22%3A%22Aceptado%22%7D%5D" data-version="2" />
+                          </div>
+                          <script type="text/javascript">
+                              setTimeout(function () {
+                                  var _cFieldFrame = document.getElementById("customFieldFrame_7");
+                                  if (_cFieldFrame) {
+                                      _cFieldFrame.onload = function () {
+                                          if (typeof widgetFrameLoaded !== 'undefined') {
+                                              widgetFrameLoaded(7, {
+                                                  "formID": 210778580535866
+                                              })
+                                          }
+                                      };
+                                      _cFieldFrame.src = "//widgets.jotform.io/termsConditions/?qid=7&ref=" + encodeURIComponent(window.location.protocol + "//" + window.location.host) + '&ndt=1' + '' + '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+                                      _cFieldFrame.addClassName("custom-field-frame-rendered");
+                                  }
+                              }, 0);
+                          </script>
+                      </div>
+                  </div>
+              </li>
+              <li class="form-line" data-type="control_button" id="id_9">
+                  <div id="cid_9" class="form-input-wide" data-layout="full">
+                      <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+                          <button id="input_9" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+                              Enviar
+                          </button>
+                      </div>
+                  </div>
+              </li>
+              <li style="display:none">
+                  Should be Empty:
+                  <input type="text" name="website" value="" />
+              </li>
+          </ul>
+      </div>
+      <script>
+          JotForm.showJotFormPowered = "new_footer";
+      </script>
+      <script>
+          JotForm.poweredByText = "Desarrollado por JotForm";
+      </script>
+      <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="210778580535866" />
+      <script type="text/javascript">
+          var all_spc = document.querySelectorAll("form[id='210778580535866'] .si" + "mple" + "_spc");
+          for (var i = 0; i < all_spc.length; i++) {
+              all_spc[i].value = "210778580535866-210778580535866";
+          }
+      </script>
+      <style>
+          .formFooter {
+              display: none;
+          }
+      </style>
+
+
+      <div class="formFooter-heightMask">
+      </div>
+      <div class="formFooter f6">
+          <div class="formFooter-wrapper formFooter-leftSide">
+              <a href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=210778580535866&utm_content=jotform_logo&utm_campaign=powered_by_jotform_le" target="_blank" class="formFooter-logoLink"><img class="formFooter-logo" src="https://cdn.jotfor.ms/assets/img/logo/logo-new@1x.png" alt="Jotform Logo"></a>
+          </div>
+          <div class="formFooter-wrapper formFooter-rightSide">
+              <span class="formFooter-text">
+                  Now create your own JotForm - It's free!
+              </span>
+              <a class="formFooter-button" href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=210778580535866&utm_content=jotform_button&utm_campaign=powered_by_jotform_le" target="_blank">Create your own JotForm</a>
+          </div>
+      </div>
+      <input type="hidden" id="input_8" name="q8_id" class="form-textbox form-hidden" value="42" data-component="autoincrement" />
+  </form>
+  <script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.24107"></script>
+  <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.24107"></script>
+
+
+
+
+  <!-- termina formulario jotform -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>m

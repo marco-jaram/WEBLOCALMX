@@ -15,6 +15,9 @@
 
 
 /*GLOBALES*/
+body {
+    background-color: white!important;
+}
 
 .mt-s {
     margin-top: 50px;
