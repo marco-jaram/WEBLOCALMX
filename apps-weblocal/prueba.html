@@ -1,84 +1,18 @@
-
-<?php
-$password = "propuestadevalor2022";
-if ($_POST['password'] != $password) {
-?>
-<style>
-.contenedor {
-   max-width: 1000px;
-   width: 100%;
-   margin: 0 auto;
-   text-align: center;
-  margin-top: 80px;
-}
-h1
-{
-   text-align: center;
-   color: #11b28e;
-}
-h2{
-   color: grey;
-}
-input{
-   margin: 5px;
-   
-}
-
-</style>
-<div class="contenedor">
-<h1>APP PROPUESTA DE VALOR</h1>
-<h2>Introduce la clave de acceso</h2>
-<form name="form" method="post" action="">
-   <input type="password" name="password"><br>
-   <input id="boton-enviar" type="submit" value="Entrar">
-
-</form>
-
-
-</div>
-<?php
-}else{
-?>
- 
- <!--inicia html  -->
-
-
- 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W4HGS8R');</script>
-    <!-- End Google Tag Manager -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=»robots» content=»noindex»>
-    <link rel="stylesheet" href="/apps-weblocal/css/app-propuesta-style.css">
-    <link rel="icon" type="image/png" href="img-landing-canvas/favicon-weblocal.png">
-    <title>APP Propuesta de Valor</title>
+    <title>Document</title>
 </head>
-
 <body>
-      <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4HGS8R"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="barra">
-        <div class="logo contenedor"> <i>Weblocalmx</i></div>
-    </div>
+    
     <section class="titulo-principal contenedor">
-        <h1>Aplicación web para obtener la Propuesta de valor de producto o servicio</h1>
+        <h1>Aplicación web para obtener la Propuesta de valor de produto o servicio</h1>
         <div class="img-min"></div>
         <div class="img-grande"></div>
-        <p>Como podrás ver en el gráfico anterior, la propuesta de valor pertenece al lienzo "canvas" del Plan de
-            Negocios. Y te tengo buenas noticias: hice una aplicación para ello y ¿qué crees? <strong>¡También
-                es gratuita!</strong> </p>
-        <p>Así que cuando termines, entra a <a href="https://weblocalmx.com/apps-weblocal/app-canvas.php">Plan de Negocios Canvas</a>  con esta clave: weblocalcanvas2022</p>
+       
         <p>Por comodidad utiliza una pantalla de laptop o desktop</p>
         <p> <strong>Instrucciones:</strong> </p>
         <ol>
@@ -223,8 +157,9 @@ input{
 
 
             <button type="submit">CARGAR RESPUESTAS EN FÓRMULA</button>
+            <p>Ve abajo para ver los resultados</p>
             <div class="mensaje-carga"></div>
-            <button onclick="javascript:window.print()"> GENERA PDF</button>
+            <button type="button" onclick="javascript:window.print()">Guardar resultados</button></div> 
         </form>
 
 
@@ -294,23 +229,141 @@ input{
         </div>
     </section>
     <div class="contenedor">
-        <button onclick="generaPDF()"> GENERA PDF Y DESCARGA</button>
+        <button type="button" onclick="javascript:window.print()">Guardar resultados</button></div> 
     </div>
-    <footer>
-        <div class="contenido-footer">
-            <span>Creado por Marco Jaramillo - 2021
-            </span>
-        </div>
-    </footer>
 
-    <script src="/apps-weblocal/js/propuesta-app.js"></script>
-    <script src="/apps-weblocal/js/imprimePDF.js"></script>
+
+
+
+
+    <script>
+        function recogeDatos(evento) {
+    evento.preventDefault();
+    //obteniendo datos desde formulario
+
+
+    let nombreservicios1 = document.querySelector("#respuesta-nombre-servicio1").value;
+    let nombreservicios2 = document.querySelector("#respuesta-nombre-servicio2").value;
+    let nombreservicios3 = document.querySelector("#respuesta-nombre-servicio3").value;
+
+
+
+
+
+    let clienteP1 = document.querySelector("#respuesta-cliente-potencial1").value;
+    let clienteP2 = document.querySelector("#respuesta-cliente-potencial2").value;
+    let clienteP3 = document.querySelector("#respuesta-cliente-potencial3").value;
+
+    let puntoDolor1 = document.querySelector("#respuesta-putos-dolor1").value;
+    let puntoDolor2 = document.querySelector("#respuesta-putos-dolor2").value;
+    let puntoDolor3 = document.querySelector("#respuesta-putos-dolor3").value;
+
+    let beneficios1 = document.querySelector("#respuesta-beneficios1").value;
+    let beneficios2 = document.querySelector("#respuesta-beneficios2").value;
+    let beneficios3 = document.querySelector("#respuesta-beneficios3").value;
+
+    let diferencial1 = document.querySelector("#respuesta-diferencial1").value;
+    let diferencial2 = document.querySelector("#respuesta-diferencial2").value;
+    let diferencial3 = document.querySelector("#respuesta-diferencial3").value;
+    //para titulares
+
+    let nombreserviciosParatitulares1 = document.querySelector("#respuesta-nombre-servicio1").value;
+    let nombreserviciosParatitulares2 = document.querySelector("#respuesta-nombre-servicio2").value;
+    let nombreserviciosParatitulares3 = document.querySelector("#respuesta-nombre-servicio3").value;
+
+    let clientePtitulares1 = document.querySelector("#respuesta-cliente-potencial1").value;
+    let clientePtitulares2 = document.querySelector("#respuesta-cliente-potencial2").value;
+    let clientePtitulares3 = document.querySelector("#respuesta-cliente-potencial3").value;
+
+
+
+
+
+    // //obteneidno lugar en formula propuesta d valor dato de formulario
+
+
+    let propuestaServicio1 = document.querySelector(".servicio-producto1");
+    let propuestaServicio2 = document.querySelector(".servicio-producto2");
+    let propuestaServicio3 = document.querySelector(".servicio-producto3");
+
+
+
+    let propuestaCliente1 = document.querySelector(".cliente-potencia1");
+    let propuestaCliente2 = document.querySelector(".cliente-potencia2");
+    let propuestaCliente3 = document.querySelector(".cliente-potencia3");
+
+
+    let propuestaDolor1 = document.querySelector(".problema-dolor1");
+    let propuestaDolor2 = document.querySelector(".problema-dolor2");
+    let propuestaDolor3 = document.querySelector(".problema-dolor3");
+
+    let propuestaBeneficios1 = document.querySelector(".bene-ficio1");
+    let propuestaBeneficios2 = document.querySelector(".bene-ficio2");
+    let propuestaBeneficios3 = document.querySelector(".bene-ficio3");
+
+    let propuestaDiferencial1 = document.querySelector(".valor-diferencial1");
+    let propuestaDiferencial2 = document.querySelector(".valor-diferencial2");
+    let propuestaDiferencial3 = document.querySelector(".valor-diferencial3");
+
+    //para titulares
+    let propuestaServicioparatitulares1 = document.querySelector(".servicio-producto4");
+    let propuestaServicioparatitulares2 = document.querySelector(".servicio-producto5");
+    let propuestaServicioparatitulares3 = document.querySelector(".servicio-producto6");
+
+
+
+    let propuestaClientetitulares1 = document.querySelector(".cliente-potencia4");
+    let propuestaClientetitulares2 = document.querySelector(".cliente-potencia5");
+    let propuestaClientetitulares3 = document.querySelector(".cliente-potencia6");
+
+
+
+
+
+    //inyectando el dato en el lugar de canvas
+
+
+    propuestaServicio1.innerHTML = nombreservicios1;
+    propuestaServicio2.innerHTML = nombreservicios2;
+    propuestaServicio3.innerHTML = nombreservicios3;
+
+    propuestaCliente1.innerHTML = clienteP1;
+    propuestaCliente2.innerHTML = clienteP2;
+    propuestaCliente3.innerHTML = clienteP3;
+
+
+    propuestaDolor1.innerHTML = puntoDolor1;
+    propuestaDolor2.innerHTML = puntoDolor2;
+    propuestaDolor3.innerHTML = puntoDolor3;
+
+    propuestaBeneficios1.innerHTML = beneficios1;
+    propuestaBeneficios2.innerHTML = beneficios2;
+    propuestaBeneficios3.innerHTML = beneficios3;
+
+    propuestaDiferencial1.innerHTML = diferencial1;
+    propuestaDiferencial2.innerHTML = diferencial2;
+    propuestaDiferencial3.innerHTML = diferencial3;
+    //para titulares
+
+
+    propuestaClientetitulares1.innerHTML = clientePtitulares1;
+    propuestaClientetitulares2.innerHTML = clientePtitulares2;
+    propuestaClientetitulares3.innerHTML = clientePtitulares3;
+
+
+
+
+    propuestaServicioparatitulares1.innerHTML = nombreserviciosParatitulares1;
+    propuestaServicioparatitulares2.innerHTML = nombreserviciosParatitulares2;
+    propuestaServicioparatitulares3.innerHTML = nombreserviciosParatitulares3;
+
+
+
+}
+
+let miForm = document.querySelector("#formulario");
+
+miForm.addEventListener("submit", recogeDatos);
+    </script>
 </body>
-
 </html>
-
-
-<!-- termina html -->
-<?php
-   }
-   ?>

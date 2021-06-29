@@ -1,5 +1,5 @@
 <?php
-$password = "APsMfnRfbbfwo*G#qG2R";
+$password = "weblocalcanvas2022";
 if ($_POST['password'] != $password) {
 ?>
 <style>
@@ -78,7 +78,7 @@ input{
         <div class="img-app-canvas-hader"></div>
         <p>Para mayor comodidad utiliza una tableta, laptop o desktop.</p>
         <p>Si aun no tienes la propuesta de valor te tengo una buena noticia. Tengo una aplicación similar a ésta y
-            ¡también es gratis!. Entra a <a href="https://weblocalmx.com/apps-weblocal/app-propuesta-de-valor.php">Propuesta de valor</a> con la clave: NrJs5uX8fw255ZnEX5</p>
+            ¡también es gratis!. Entra a <a href="https://weblocalmx.com/apps-weblocal/app-propuesta-de-valor.php">Propuesta de valor</a> con la clave: propuestadevalor2022</p>
         <br>
         <p> <strong>Instrucciones</strong> : contesta el cuestionario con la mayor cantidad de respuestas. Carga las
             respuestas dándole al botón "cargar respuestas" y luego al botón "generara pdf" y descárgalo.</p>
@@ -192,7 +192,7 @@ input{
 
             <button type="submit">CARGAR RESPUESTAS EN CANVAS</button>
             <div class="mensaje-carga"></div>
-            <button onclick="generaPDF()"> GENERA PDF Y DESCARGA</button>
+            <button onclick="javascript:window.print()"> GENERA PDF</button>
         </form>
     </div>
     <br><br><br>
@@ -306,7 +306,7 @@ input{
         </div>
     </div>
     <div class="contenedor">
-        <button onclick="generaPDF()"> GENERA PDF Y DESCARGA</button>
+        <button onclick="javascript:window.print()"> GENERA PDF Y DESCARGA</button>
     </div>
 
 

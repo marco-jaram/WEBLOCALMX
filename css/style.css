@@ -1080,7 +1080,9 @@ padding: 20px;
     font-size: 3rem;
     color: var(--color-primario);
 }
-
+.aviso-privacidad1{
+    padding-top: 50px;
+}
 /*mediaquery para pantalla de lap generica*/
 
 /*mediaquery para pantalla de lap generica*/
